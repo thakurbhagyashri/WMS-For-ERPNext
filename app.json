@@ -1,0 +1,82 @@
+{
+  "expo": {
+    "name": "WMS for ERPNext",
+    "slug": "swift-wms",
+    "version": "1.0.18",
+    "orientation": "portrait",
+    "icon": "./assets/images/wms_icon.png",
+    "scheme": "wms",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "8",
+      "bundleIdentifier": "com.asoral.swiftwms",
+      "infoPlist": {
+        "CFBundleDisplayName": "WMS for ERPNext",
+        "CFBundleName": "WMS for ERPNext",
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "WMS for ERPNext requires camera access to scan item barcodes, picklist IDs, and sales order barcodes."
+      }
+    },
+    "android": {
+      "package": "com.asoral.wms",
+      "versionCode": 18,
+      "adaptiveIcon": {
+        "backgroundColor": "#0F1E50",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/wms_icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/wms_icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0f172a",
+          "dark": {
+            "backgroundColor": "#0f172a"
+          }
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "WMS for ERPNext requires camera access to scan item barcodes, picklist IDs, and sales order barcodes."
+        }
+      ],
+      "expo-font",
+      "expo-localization",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "WMS for ERPNext needs access to your photo library so you can upload a profile picture."
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-image",
+      "expo-secure-store",
+      "expo-sharing",
+      "expo-status-bar",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "eb584171-e841-4f08-b246-c5c1d3400fbc"
+      }
+    }
+  }
+}
